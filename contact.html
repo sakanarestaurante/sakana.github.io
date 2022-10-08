@@ -21,6 +21,8 @@
 		<link rel="apple-touch-icon-precomposed" href="images/icons/favicon-180x180.png" />
 	</head>
 	<body class="body-header1" >
+
+	
 		
 		  <!-- MOBILE MENU -->
 		  <div class="mask-nav-2">
@@ -176,7 +178,32 @@
 						</div>
 						<div class="margin-b24">Si tiene alguna sugerencia no dude en contactar con nosotros.</div>
 						<div id="contact-form-holder">
-							<form method="post" id="contact-form" action='include/contact-process.php'>
+
+							
+							<div class="container">
+								<form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
+								  <div class="form-group">
+									<div class="form-row">
+									  <div class="col">
+										<input type="text" name="nombew" class="form-control" placeholder="Nombre" required>
+									  </div>
+									  <div class="col">
+										<input type="email" name="Correo electrónico" class="form-control" placeholder="Correo electrónico" required>
+									  </div>
+									</div>
+								  </div>
+								  <div class="form-group">
+									<textarea placeholder="Asunto" class="form-control" name="message" rows="1" required></textarea>
+								  </div>
+								  <div class="form-group">
+									<textarea placeholder="Mensaje" class="form-control" name="message" rows="10" required></textarea>
+								  </div>
+								  <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar mensaje</button>
+								</form>
+							  </div>
+
+
+							<!-- <form method="post" id="contact-form" action='include/contact-process.php'>
 								<div class="row">
 									<div class="col-md-6">
 										<label>Nombre</label>
@@ -186,15 +213,18 @@
 										<label>Correo electrónico</label>
 										<p><input type="text" name="email" class="reservation-fields"/></p>
 									</div>
-								</div>
+								</div> -->
+
 								<!-- /col-md-6 -->
-								<label>Asunto</label>
+
+								<!-- <label>Asunto</label>
 								<input type="text" name="subject" class="reservation-fields" />
 								<label>Mensaje</label>
 								<p> <textarea name="message" id="msg-contact" class="reservation-fields" rows="7"></textarea></p>
 								<p class="antispam">Leave this empty: <input type="text" name="url" /></p>
 								<p class="contact-btn"><input type="submit" value=" Enviar mensaje" id="submit"/></p>
-							</form>
+							</form> -->
+
 						</div>
 						<!-- contact-form-holder-->
 						<div id="output-contact"></div>
