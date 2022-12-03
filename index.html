@@ -20,10 +20,11 @@
 		media='all' />
 	<!-- Main CSS File -->
 	<link rel='stylesheet' id='dina-style-css-css' href='style.css' type='text/css' media='all' />
-	<!-- favicons -->
-	<link rel="icon" href="images/icons/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" href="images/icons/favicon-192x192.png" sizes="192x192" />
-	<link rel="apple-touch-icon-precomposed" href="images/icons/favicon-180x180.png" />
+	<link rel="preload" href="Foto/IMG_5050.webp" as="image" />
+	<link rel="preload" href="Foto/IMG_5049.webp" as="image" />
+	<link rel="preload" href="Photos/IMG_5032.webp" as="image" />
+	<link rel="preload" href="Photos/IMG_5033.webp" as="image" />
+	<link rel="preload" href="Photos/IMG_5034.webp" as="image" />
 </head>
 
 
@@ -131,38 +132,45 @@
 	<!-- /HEADER -->
 
 
-
-	<!-- HOME VIDEO -->
-	<div class="video-container">
-		<video playsinline="true" webkit-playsinline="true" id="video" class="video" preload="metadata" autoplay=""
-			loop="" muted="" poster="">
-			<source src="Videos/1_1664479818.mp4" type="video/mp4">
-		</video>
-
-		<script>
-			document.addEventListener(
-				'WeixinJSBridgeReady',
-				function () {
-					var video = document.getElementById("video");
-					video.play();
-				},
-				false
-			);
-		</script>
-
-
-		<div class="slider-caption">
-			<div class="slider-text">
-				<h1>Sakana</h1>
-				<p></p>
-				<p> <a href="menu.html" class="view-more more-white">Ver la carta</a></p>
+	<!-- HOME SLIDER -->
+	<div class="slider-container">
+		<div class="owl-carousel owl-theme home-slider">
+			<div class="slider-post slider-item-box-bkg">
+				<div class="slider-img" style="background-image:url('Photos/IMG_5033.webp');"></div>
+				<div class="slider-caption">
+					<div class="slider-text">
+						<h1>SAKANA</h1>
+						<p> <a href="reservation.html" class="view-more more-white">Reservar una mesa</a></p>
+					</div>
+				</div>
+				<!--slider-caption-->
 			</div>
+			<!--slider-post-->
+			<div class="slider-post slider-item-box-bkg">
+				<div class="slider-img" style="background-image:url('Foto/IMG_5050.webp');"></div>
+				<div class="slider-caption">
+					<div class="slider-text">
+						<h1>SAKANA</h1>
+						<p> <a href="reservation.html" class="view-more more-white">Reservar una mesa</a></p>
+					</div>
+				</div>
+				<!--slider-caption-->
+			</div>
+			<!--slider-post-->
+			<div class="slider-post slider-item-box-bkg">
+				<div class="slider-img" style="background-image:url('Foto/IMG_5049.webp');"></div>
+				<div class="slider-caption">
+					<div class="slider-text">
+						<h1>SAKANA</h1>
+						<p> <a href="reservation.html" class="view-more more-white">Reservar una mesa</a></p>
+					</div>
+				</div>
+				<!--slider-caption-->
+			</div>
+			<!--slider-post-->
 		</div>
-		<!--slider-caption-->
 	</div>
-	<!-- /HOME VIDEO -->
-
-
+	<!-- /HOME SLIDER -->
 
 	<!-- SECTION 1 -->
 	<section id="home-content-1" class="home-widget">
@@ -324,7 +332,7 @@
 										<div class="menu-post-desc">
 											<h4><span class="menu-title">4.Ensalada Kansei</span> <span
 													class="menu-dots"></span><span class="menu-price">12.90€</span></h4>
-											<div class="menu-text"> Algas, Salmón, Atún, Gambas </div>
+											<div class="menu-text"> Wakame, Acuacate, Salmón, Atún, Gambas, Pescado Variado</div>
 										</div>
 									</div>
 
